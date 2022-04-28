@@ -1,0 +1,50 @@
+@use "/src/scss/mixins";
+@use "/src/scss/colors" as *;
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 40px 20px 20px;
+}
+
+.modal-content {
+  top: 0;
+  left: 0;
+  padding: 3rem;
+  background-color: #f1f6ff;
+  color: rgb(47, 47, 47);
+  border-radius: 0.3rem;
+  position: relative;
+}
+
+.button {
+  @include mixins.buttonLight;
+  background-color: $main;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  border-color: $main;
+  color: $main;
+}
+
+.error {
+  font-size: 0.8rem;
+  color: $delete;
+}
+
+.fieldContainer {
+  display: flex;
+}
+
+.input {
+  @include mixins.input;
+  padding: 0.5em 0.5em 0.5em;
+  margin: 0 1rem 0 0;
+}

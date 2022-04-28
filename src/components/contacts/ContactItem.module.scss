@@ -1,0 +1,35 @@
+@use "/src/scss/mixins";
+@use "/src/scss/colors" as *;
+
+.contact {
+  border-bottom: 1px solid $main;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact:first-child {
+  border-top: 1px solid $main;
+}
+
+.buttonEdit {
+  @include mixins.buttonLight;
+  background-color: $edit;
+  margin-right: 1rem;
+}
+
+.buttonEdit:hover {
+  color: $edit;
+  border-color: $edit;
+}
+
+.buttonDelete {
+  @include mixins.buttonLight;
+  background-color: $delete;
+}
+
+.buttonDelete:hover {
+  color: $delete;
+  border-color: $delete;
+}

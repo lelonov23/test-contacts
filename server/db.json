@@ -1,0 +1,27 @@
+{
+  "login": {
+    "token": "test"
+  },
+  "data": [
+    {
+      "id": 1,
+      "name": "Alyssa Greene",
+      "phone": "123-456-7890"
+    },
+    {
+      "id": 2,
+      "name": "Alyssa Greene",
+      "phone": "123-456-7890"
+    },
+    {
+      "id": 3,
+      "name": "Alyssa Greene",
+      "phone": "123-456-7890"
+    },
+    {
+      "id": 4,
+      "name": "Alyssa Greene",
+      "phone": "123-456-7890"
+    }
+  ]
+}

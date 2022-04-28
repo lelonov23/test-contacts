@@ -1,0 +1,51 @@
+@use "/src/scss/mixins";
+@use "/src/scss/colors" as *;
+
+.container {
+  @include mixins.container;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input {
+  @include mixins.input;
+  padding: 0.5em 0.5em 0.5em;
+}
+
+.fieldContainer {
+  display: flex;
+}
+
+.addContactForm {
+  padding: 3rem 0;
+}
+
+.addContactForm label {
+  margin-right: 1rem;
+}
+
+.button {
+  @include mixins.buttonLight;
+  background-color: $main;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  border-color: $main;
+  color: $main;
+}
+
+.error {
+  font-size: 0.8rem;
+  color: $delete;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
