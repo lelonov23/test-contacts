@@ -5,7 +5,6 @@ import Portal from "./Portal";
 
 import styles from "./Modal.module.scss";
 import Store, { Contact } from "../../store/Store";
-import { v4 } from "uuid";
 
 interface ModalProps {
   isOpen: boolean;
