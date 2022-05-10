@@ -1,13 +1,9 @@
-import React, { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import { observer } from "mobx-react";
 
 import styles from "./Header.module.scss";
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
-
-// interface HeaderProps {
-//   token: string;
-// }
 
 const Header: FC = observer(() => {
   const token = Cookies.get("token");
